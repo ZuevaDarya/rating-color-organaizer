@@ -1,0 +1,119 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 10px;
+  font-size: 1rem;
+
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.form-item{
+  filter: drop-shadow(0 0 5px #21253f84);
+  border: none; 
+  border-radius: 9999em;
+
+  transition-property: filter;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.form__input-title{
+  display: inline-block;
+  width: 40%;
+  min-width: 200px;
+  font-size: 1.125em;
+  padding: 0.2777em 0.8333em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(56, 56, 56);
+}
+
+.form__input-title::placeholder{
+  color: rgb(151, 152, 169);
+}
+
+.form__input-title:hover{
+  filter: drop-shadow(0 0 7px #646464);
+  transition-property: filter;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.form__input-title:focus{
+  filter: drop-shadow(0 0 7px #12c0e3);
+  transition-property: filter;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  
+  border: none;
+  outline-width: 0;
+}
+
+.form__input-color{
+  display: inline-block;
+  width: 10%;
+  cursor: pointer;
+  height: auto;
+  min-height: 40px;
+  min-width: 65px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  outline-width: 0;
+}
+
+.form__input-color::-webkit-color-swatch{
+  border-radius: 9999em;
+  border: none; 
+  outline-width: 0;
+}
+
+.form__input-color:hover{
+  filter: drop-shadow(0 0 7px #646464);
+  transition-property: filter;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.form__input-color:focus{
+  filter: drop-shadow(0 0 7px #c70164);
+  transition-property: filter;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.form__button{
+  display: inline-block;
+  width: 10%;
+  min-width: 65px;
+  cursor: pointer;
+
+  outline-width: 0;
+  background: linear-gradient(45deg, #75dafb, #e3127a);
+
+  color: white;
+  font-weight: bold;
+  font-size: 1.125em;
+  letter-spacing: .05em;
+
+  padding: 0.1111em;
+}
+
+.form__button:hover{
+  filter: drop-shadow(0 0 1px #0e002b);
+  color: rgba(255, 255, 255, 0.848);
+  transition-property: filter, color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.form__button:active{
+  filter: drop-shadow(0 0 7px #8802ae);
+  transition-property: filter;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}

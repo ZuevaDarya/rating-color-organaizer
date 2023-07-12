@@ -1,0 +1,15 @@
+.color-list{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 40px;
+
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  
+  @media (max-width: 1041px) {
+    justify-content: space-around;
+  }
+}
